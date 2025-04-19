@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sleepy Joe Coin - Pre Sale</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sleepy Joe Coin Presale</h1>
+        <p>Help us reach 20 BNB to get listed on PancakeSwap!</p>
+    </header>
+
+    <section id="rewards">
+        <h2>Rewards</h2>
+        <p>5% bonus for every purchase.</p>
+        <p>10% of invited user's purchase will be rewarded to the inviter.</p>
+    </section>
+
+    <section id="referral">
+        <h2>Your Referral Link</h2>
+        <input type="text" id="referral-link" value="https://sleepyjoe.netlify.app?ref=your_wallet_address" readonly />
+        <button onclick="copyReferral()">Copy Link</button>
+    </section>
+
+    <section id="progress">
+        <h2>Presale Progress</h2>
+        <div id="progress-bar">
+            <div id="filled" style="width: 0%"></div>
+        </div>
+        <p id="progress-text">0% of goal achieved</p>
+    </section>
+
+    <section id="transactions">
+        <h2>Transaction History</h2>
+        <table id="transactions-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Buyer Wallet</th>
+                    <th>Referrer Wallet</th>
+                    <th>Amount (BNB)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sleepy Joe Coin. All rights reserved.</p>
+    </footer>
+</body>
+</html>
